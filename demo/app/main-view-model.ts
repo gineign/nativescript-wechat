@@ -1,14 +1,14 @@
 import {Observable} from 'data/observable';
-import {NativescriptWechat} from 'nativescript-nativescript-wechat';
+import {Wechat} from 'nativescript-wechat';
 
 export class HelloWorldModel extends Observable {
   public message: string;
-  private nativescriptWechat: NativescriptWechat;
+  private wechat: Wechat;
 
   constructor() {
     super();
 
-    this.nativescriptWechat = new NativescriptWechat();
-    this.message = this.nativescriptWechat.message;
+    this.wechat = new Wechat();
+    this.message = this.wechat.message;
   }
 }

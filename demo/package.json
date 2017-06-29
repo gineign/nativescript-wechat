@@ -9,9 +9,9 @@
     }
   },
   "dependencies": {
-    "nativescript-nativescript-wechat": "file:///Users/gineign/Desktop/nativescript-wechat",
     "nativescript-theme-core": "^1.0.2",
     "nativescript-unit-test-runner": "^0.3.4",
+    "nativescript-wechat": "file:///Users/gineign/Developer/nativescript-wechat",
     "tns-core-modules": "~2.5.2"
   },
   "devDependencies": {
