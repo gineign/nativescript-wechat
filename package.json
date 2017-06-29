@@ -1,11 +1,53 @@
 {
   "name": "nativescript-wechat",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Your awesome NativeScript plugin.",
+  "main": "nativescript-wechat",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "build": "tsc",
+    "demo.ios": "npm run preparedemo && cd demo && tns run ios --emulator",
+    "demo.ios.device": "npm run preparedemo && cd demo && tns run ios",
+    "demo.android": "npm run preparedemo && cd demo && tns run android --emulator",
+    "test.ios": "cd demo && tns test ios --emulator",
+    "test.ios.device": "cd demo && tns test ios",
+    "test.android": "cd demo && tns test android",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-nativescript-wechat && tns plugin add .. && tns install",
+    "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd ..",
+    "postclone": "npm i && node scripts/postclone.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gineign/nativescript-nativescript-wechat.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS",
+    "wechat"
+  ],
+  "author": {
+    "name": "Gineign",
+    "email": "info@gineign.com"
+  },
+  "bugs": {
+    "url": "https://github.com/gineign/nativescript-nativescript-wechat/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/gineign/nativescript-nativescript-wechat",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "tns-core-modules": "~3.0.0",
+    "tns-platform-declarations": "^3.0.1",
+    "typescript": "~2.2.1",
+    "prompt": "~1.0.0",
+    "rimraf": "~2.5.0"
+  }
 }
