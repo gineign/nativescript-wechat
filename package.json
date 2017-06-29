@@ -1,6 +1,6 @@
 {
   "name": "nativescript-wechat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Your awesome NativeScript plugin.",
   "main": "nativescript-wechat",
   "typings": "index.d.ts",
