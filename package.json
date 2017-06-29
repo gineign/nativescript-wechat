@@ -2,7 +2,7 @@
   "name": "nativescript-wechat",
   "version": "0.0.2",
   "description": "Your awesome NativeScript plugin.",
-  "main": "nativescript-wechat",
+  "main": "wechat",
   "typings": "index.d.ts",
   "nativescript": {
     "platforms": {
@@ -13,7 +13,7 @@
   "scripts": {
     "build": "tsc",
     "demo.ios": "npm run preparedemo && cd demo && tns run ios --emulator",
-    "demo.ios.device": "npm run preparedemo && cd demo && tns run ios --device 33554fd143630982488363221acb8dd4405baa02",
+    "demo.ios.device": "npm run preparedemo && cd demo && tns run ios",
     "demo.android": "npm run preparedemo && cd demo && tns run android --emulator",
     "test.ios": "cd demo && tns test ios --emulator",
     "test.ios.device": "cd demo && tns test ios",

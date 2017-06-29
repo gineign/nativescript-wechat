@@ -10,5 +10,5 @@ npm version patch
 ## Credit
 
 ```
-https://github.com/NathanWalker/nativescript-plugin-seed.git
+https://github.com/NathanWalker/nativescript-plugin-seed
 ```
