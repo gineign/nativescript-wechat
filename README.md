@@ -2,6 +2,11 @@
 
 ## Getting started
 
+## npm
+```
+npm version patch
+```
+
 ## Credit
 
 ```
